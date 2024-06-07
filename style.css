@@ -1,0 +1,47 @@
+@charset "UTH-8";
+
+html {
+	font-size: 100%;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+ul {
+	list-style: none;
+}
+
+.content {
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: 20px auto;
+}
+
+#mainvisual {
+	padding: 10px;
+}
+#thumbnail {
+	display: flex;
+}
+#thumbnail li {
+	width: 20%;
+	padding: 10px;
+}
+
+/*--
+SP
+--*/
+
+@media screen and (max-width: 600px) {
+	.content {
+		padding: 0 10px;
+		margin: 10px auto;
+	}
+
+	#mainvisual {
+		padding: 5px;
+	}
+	#thumbnail li {
+		padding: 5px;
+	}
+}
