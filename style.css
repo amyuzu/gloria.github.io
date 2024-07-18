@@ -1,37 +1,86 @@
 @charset "UTH-8";
 
+/* 全体設定 */
 html {
 	font-size: 100%;
+	background-color: #f8f4e6;
 }
+
+/* 画像設定 */
 img {
 	max-width: 100%;
 	vertical-align: bottom;
 }
+
+/* リスト設定 */
 ul {
 	list-style: none;
 }
 
-.content {
-	max-width: 1000px;
-	padding: 0 20px;
-	margin: 20px auto;
+/* 見出し設定 */
+header {
+	position: fixed; /* ヘッダー固定 */
+	z-index: 999; /* 最前面に固定 */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	padding: 20px;
+	background-color: #4e454a;
+	color: #fac559;
+	font-size: 20px;
+	font-family: 'Athelas',sans-serif;
 }
 
-#mainvisual {
-	padding: 10px;
+/* コンテンツ設定 */
+main {
+	max-width: 1000px;
+	padding: 60px 5px;
+	margin: 20px auto;
+	overflow: auto;
+	font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
 }
+
+/* メイン設定 */
+#mainvisual {
+	display: flex; /* flexboxで横並びに */
+	padding: 5px;
+	align-items: center; /* 中央揃え */
+	justify-content: space-between; /* 画像と説明文の間にスペースを入れる */
+	position: relative; /* 相対配置を追加 */
+}
+#mainvisual img {
+	width: 100%;
+	max-width: 700px;
+        height: auto;
+}
+#mainvisual p {
+	width: 100%;
+        padding: 10px;
+        text-align: left;
+	white-space: pre-wrap;
+	font-size: 15px;
+}
+
+/* サムネイル設定 */
 #thumbnail {
 	display: flex;
+	font-size: 5px;
 }
 #thumbnail li {
 	width: 20%;
 	padding: 10px;
+	font-family: 'Athelas',sans-serif;
+}
+
+/* サムネイルの説明非表示 */
+.thumbnail-description {
+	display: none;
 }
 
 /*--
 SP(スマホ)
 --*/
-
 @media screen and (max-width: 600px) {
 	.content {
 		padding: 0 10px;
@@ -39,7 +88,15 @@ SP(スマホ)
 	}
 
 	#mainvisual {
+		flex-direction:column; /* スマホでは縦並び */
 		padding: 5px;
+	}
+	#mainvisual img {
+		width: 100%;
+	}
+	#mainvisual .description {
+		width: 100%;
+		padding: 10px+
 	}
 	#thumbnail li {
 		padding: 5px;
