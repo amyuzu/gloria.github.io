@@ -6,23 +6,85 @@
 		<meta name="description" content="GLORIAとは">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="main.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 
 	<body>
-		<div class="content">
-			<div id="mainvisual">
-				<img src="img/mainvisual1.jpg" alt="">
-			</div>
-			<ul id="thumbnail">
-				<li><img src="img/mainvisual1.jpg" alt=""></li>
-        			<li><img src="img/mainvisual2.jpg" alt=""></li>
-      				<li><img src="img/mainvisual3.jpg" alt=""></li>
-        			<li><img src="img/mainvisual4.jpg" alt=""></li>
-        			<li><img src="img/mainvisual5.jpg" alt=""></li>
-			</ul>
+	<header>
+		<h1 id="main-heading" class="heading">GLORIA</h1>
+	</header>
+	<main>
+		<div id="mainvisual">
+			<img id="main-image" src="img/mainvisual1.jpg" alt="Mainvisual 1">
+			<p id="main-description">
+日産・グロリアワゴン 
+SGL リミテッド（WY30型）
+
+日産が1959年から2004年まで
+製造・販売していた乗用車
+7~8人乗り
+			</p>
 		</div>
+		<ul id="thumbnail">
+			<li data-image="img/mainvisual1.jpg" data-heading="GLORIA">
+				<img src="img/mainvisual1.jpg" alt="Mainvisual 1">
+				<h1 class="heading">GLORIA</h1>
+				<p class="thumbnail-description">
+日産・グロリアワゴン 
+SGL リミテッド（WY30型）
+
+日産が1959年から2004年まで
+製造・販売していた乗用車
+7~8人乗り
+				</p>
+			</li>
+			<li data-image="img/mainvisual2.jpg" data-heading="HISTORY">
+				<img src="img/mainvisual2.jpg" alt="Mainvisual 2">
+				<h1 class="heading">HISTORY</h1>
+				<p class="thumbnail-description">
+初代 LSI型/S3型（1959年 - 1962年）
+2代目 S40型系（1962年 - 1967年）
+3代目 A30型系（1967年 - 1971年）
+4代目 230型系（1971年 - 1975年）
+5代目 330型系（1975年 - 1979年）
+6代目 430型系（1979年 - 1983年）
+7代目 Y30型系（1983年 - 1999年）
+8代目 Y31型系（1987年 - 1999年）
+9代目 Y32型系（1991年 - 1995年）
+10代目 Y33型系（1995年 - 1999年）
+				</p>
+			</li>
+			<li data-image="img/mainvisual3.jpg" data-heading="SIZE">
+				<img src="img/mainvisual3.jpg" alt="Mainvisual 3">
+				<h1 class="heading">SIZE</h1>
+				<p class="thumbnail-description">
+全長：4,690mm
+全幅：1,690mm
+全高：1,500mm
+				</p>
+			</li>
+			<li data-image="img/mainvisual4.jpg" data-heading="EXTERIOR">
+				<img src="img/mainvisual4.jpg" alt="Mainvisual 4">
+				<h1 class="heading">EXTERIOR</h1>
+				<p class="thumbnail-description">
+車体カラーは黒、茶色、白など
+				</p>
+			</li>
+			<li data-image="img/mainvisual5.jpg" data-heading="INTERIOR">
+				<img src="img/mainvisual5.jpg" alt="Mainvisual 5">
+				<h1 class="heading">INTERIOR</h1>
+				<p class="thumbnail-description">
+シートは茶色又はネイビー
+ソファーのように座り心地が良い
+シフトレバーがコラム式で
+シートがベンチ型の内装を
+「ベンコラ」と呼ぶ
+メーターは四角い形で表示されている
+				</p>
+			</li>
+		</ul>
+	</main>
 	</body>
 </html>
